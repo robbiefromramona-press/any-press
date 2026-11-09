@@ -36,7 +36,7 @@
 .form-hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
 
 /* Backup mailto line under the form */
-.form-backup{color:#9a9188;margin:12px 0 0;font-size:11px}
+.form-backup{color:#9a9188;margin:18px 0 0;font-size:11px}
 .form-backup a{color:var(--orange);font-weight:700}
 
 /* thanks.html - the page the contact form redirects to */
@@ -46,3 +46,16 @@
 .thanks-copy a{color:var(--orange);font-weight:700}
 .thanks-actions{flex-wrap:wrap;align-items:center;gap:14px 22px;margin-top:26px;display:flex}
 .thanks-actions .button{width:auto}
+
+/* Phone header fix: at 375px the brand lockup forced its full width and
+   pushed the "Let's talk" button off the right edge, which made the whole
+   page scroll sideways. Dropping the tagline and letting the brand shrink
+   gives the button room. */
+@media (max-width:560px){
+  .brand{min-width:0;flex-shrink:1}
+  .brand-lockup{min-width:0}
+  .brand-lockup small{display:none}
+  .header-cta{flex-shrink:0;min-height:44px;padding:0 14px}
+  .mobile-nav summary{min-height:44px;align-items:center;display:flex}
+  .back-top{min-height:36px;align-items:center;display:inline-flex}
+}
