@@ -1,0 +1,17 @@
+# Any-Press deploy settings.
+#
+# This is a plain static site: no build step, no npm, no framework.
+# Everything that gets published already sits in the repo root, so there
+# is nothing to compile and the publish directory is the root itself.
+#
+# Setting publish here means the deploy works the same whether or not
+# anyone has touched the Netlify UI, and it overrides the UI if the two
+# ever disagree.
+#
+# The contact form is handled by Netlify Forms. Netlify finds it by
+# scanning the published HTML for the form tagged data-netlify="true",
+# so no extra config is needed here. Email notifications for submissions
+# are a dashboard setting: Forms > contact > Settings > Form notifications.
+
+[build]
+  publish = "."
