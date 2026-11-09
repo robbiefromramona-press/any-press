@@ -19,3 +19,6 @@
 /* Add-ons line under the pricing cards */
 .price-addons{color:#5c564f;margin:18px 0 0;font-size:11px;line-height:1.7}
 .price-addons b{color:var(--ink);font-weight:800}
+
+/* Tap-to-call line in the contact card, matched to the email line above it */
+.contact-phone{letter-spacing:-.04em;justify-content:space-between;align-items:center;margin:0 0 14px;font-size:clamp(15px,2vw,20px);font-weight:800;display:flex}
