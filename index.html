@@ -292,7 +292,42 @@
       <a class="contact-email" href="mailto:robbiefromramona@live.com?subject=Any-Press%20website%20project">robbiefromramona@live.com <span class="button-symbol" aria-hidden="true">↗</span></a>
       <a class="contact-phone" href="tel:+17609071099">(760) 907-1099 <span class="button-symbol" aria-hidden="true">↗</span></a>
       <p>Local to Ramona. Working across San Diego County.</p>
-      <a href="mailto:robbiefromramona@live.com?subject=Any-Press%20website%20project" class="button button-orange">Start a conversation <span class="button-symbol" aria-hidden="true">↗</span></a>
+
+      <!-- Netlify Forms. Submissions appear in the Netlify dashboard under
+           Forms > contact, and get emailed once notifications are turned on.
+           The bot-field below is a honeypot: it stays hidden, so anything
+           that fills it in is a bot and the submission is dropped. -->
+      <form class="contact-form" name="contact" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact">
+        <p class="form-hp"><label>Leave this field empty: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+
+        <label for="cf-name">Your name</label>
+        <input id="cf-name" name="name" type="text" autocomplete="name" required>
+
+        <label for="cf-business">Business name</label>
+        <input id="cf-business" name="business" type="text" autocomplete="organization" required>
+
+        <label for="cf-reach">Email or phone</label>
+        <input id="cf-reach" name="email-or-phone" type="text" required>
+
+        <label for="cf-site">Current website <span>(optional)</span></label>
+        <input id="cf-site" name="current-website" type="text" placeholder="yourshop.com">
+
+        <label for="cf-plan">Plan you are interested in</label>
+        <select id="cf-plan" name="plan-interest">
+          <option>Fresh Coat</option>
+          <option>Keep It Running</option>
+          <option>Full Send</option>
+          <option selected>Not sure</option>
+        </select>
+
+        <label for="cf-message">What would you like your website to do better?</label>
+        <textarea id="cf-message" name="message" rows="4"></textarea>
+
+        <button type="submit" class="button button-orange">Send it <span class="button-symbol" aria-hidden="true">↗</span></button>
+      </form>
+
+      <p class="form-backup">Rather just email? <a href="mailto:robbiefromramona@live.com?subject=Any-Press%20website%20project">robbiefromramona@live.com</a></p>
     </div>
   </div>
 </section>

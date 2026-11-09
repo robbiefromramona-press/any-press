@@ -22,3 +22,27 @@
 
 /* Tap-to-call line in the contact card, matched to the email line above it */
 .contact-phone{letter-spacing:-.04em;justify-content:space-between;align-items:center;margin:0 0 14px;font-size:clamp(15px,2vw,20px);font-weight:800;display:flex}
+
+/* Contact form inside the dark contact card */
+.contact-form{color-scheme:dark;gap:4px;margin-top:4px;display:grid}
+.contact-form label{letter-spacing:.1em;text-transform:uppercase;color:#c7bfb7;margin-top:10px;font-size:8px;font-weight:800}
+.contact-form label span{letter-spacing:0;text-transform:none;opacity:.7;font-weight:600}
+.contact-form input,.contact-form select,.contact-form textarea{background:#0f0f0ecc;color:var(--cream);border:1px solid #ffffff26;border-radius:8px;width:100%;padding:10px 12px;font-family:var(--font-ui);font-size:13px;font-weight:600}
+.contact-form textarea{resize:vertical;min-height:84px;line-height:1.5}
+.contact-form input:focus,.contact-form select:focus,.contact-form textarea:focus{border-color:var(--orange);outline:2px solid #e8551f59;outline-offset:1px}
+.contact-form button{cursor:pointer;width:100%;margin-top:18px;font-family:var(--font-ui)}
+
+/* Honeypot: must stay hidden from real people */
+.form-hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+
+/* Backup mailto line under the form */
+.form-backup{color:#9a9188;margin:12px 0 0;font-size:11px}
+.form-backup a{color:var(--orange);font-weight:700}
+
+/* thanks.html - the page the contact form redirects to */
+.thanks-section{min-height:calc(100vh - 172px);align-items:center;display:flex}
+.thanks-inner{max-width:640px}
+.thanks-copy{color:#c7bfb7;margin:14px 0 0;font-size:14px;line-height:1.7}
+.thanks-copy a{color:var(--orange);font-weight:700}
+.thanks-actions{flex-wrap:wrap;align-items:center;gap:14px 22px;margin-top:26px;display:flex}
+.thanks-actions .button{width:auto}
