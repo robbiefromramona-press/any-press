@@ -1,5 +1,7 @@
 # Any-Press website
 
+**Live:** https://any-press.com · Built with Claude by robbiefromramona-press · MIT licensed.
+
 The marketing site for **Any-Press** (any-press.com) — website design and
 digital marketing for small businesses in Ramona and San Diego County.
 
@@ -76,7 +78,7 @@ The site is just files, so you can double-click `index.html` to open it in a
 browser. For a closer match to the real thing, serve it on a local address:
 
 ```bash
-python -m http.server 8808 --directory C:/Users/robbi/GitHub/Repos/any-press
+python -m http.server 8808
 ```
 
 Then open http://localhost:8808 in your browser. Press Ctrl+C in the terminal
@@ -105,3 +107,7 @@ The look, layout and wording started as a ChatGPT-built page at
 framework scripts are gone, the mobile menu works without JavaScript, and the
 unused 102 KB of Tailwind utilities were dropped. The design itself is
 unchanged apart from the fixes recorded in the git history.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
