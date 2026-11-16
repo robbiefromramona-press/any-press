@@ -52,14 +52,10 @@ ends, or delete the whole line to remove the banner.
 
 Open `index.html` and search for `EDIT CONTACT INFO HERE`. The email address
 appears three times on the page (the big link, the form backup line, and the
-`"email"` line in the schema block up in the `<head>`) and the phone number
-appears twice. Search and replace is the safe way to catch all of them.
+`"email"` line in the schema block up in the `<head>`). Search and replace is
+the safe way to catch all of them.
 
-The phone number in the `<head>` schema block is written as
-`+1-760-907-1099`. That format is for Google, not for people — keep the
-dashes if you change it.
-
-Both also appear in `legal.html` and `thanks.html`.
+It also appears in `legal.html`.
 
 ## The contact form
 
