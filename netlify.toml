@@ -15,3 +15,20 @@
 
 [build]
   publish = "."
+
+# Client concept mockups used to live in this repo. They now live in a
+# separate private repo with its own Netlify site. These two rules keep the
+# links already sent to clients working: the address stays on any-press.com
+# and Netlify quietly serves the page from the mockups site (status 200 =
+# proxy, not a visible redirect).
+[[redirects]]
+  from = "/rk-electric-mockup/*"
+  to = "https://any-press-mockups.netlify.app/rk-electric-mockup/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/qualityhydroseeding-mockup/*"
+  to = "https://any-press-mockups.netlify.app/qualityhydroseeding-mockup/:splat"
+  status = 200
+  force = true
